@@ -13,12 +13,15 @@
 					scrt2URL: 'https://infallibletechiemiaw.my.salesforce-scrt.com'
 				}
 			);
+   			embeddedservice_bootstrap.utilAPI.showChatButton();
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
-</script>
-<script type='text/javascript' src='https://infallibletechiemiaw.my.site.com/ESWMessagingforInAppa1676392506026/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
+	</script>
+	<script type='text/javascript' 
+ 	src='https://infallibletechiemiaw.my.site.com/ESWMessagingforInAppa1676392506026/assets/js/bootstrap.min.js' 	
+ 	onload='initEmbeddedMessaging()'>
+ 	</script>
    </body>
 </html>
