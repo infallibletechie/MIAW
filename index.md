@@ -4,7 +4,6 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = false;
 			embeddedservice_bootstrap.init(
 				'00D8Z000000sp44',
 				'Messaging_for_In_App_and_Web_GitHub',
