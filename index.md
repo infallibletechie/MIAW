@@ -6,11 +6,11 @@
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 	
 				embeddedservice_bootstrap.init(
-					'00D8Z000000sp44',
-					'Messaging_for_In_App_and_Web_GitHub',
-					'https://infallibletechiemiaw.my.site.com/ESWMessagingforInAppa1676392506026',
+					'00Dau000002ItPt',
+					'MIAW',
+					'https://infallibletechiemiaworg.my.site.com/ESWMIAW1720544291552',
 					{
-						scrt2URL: 'https://infallibletechiemiaw.my.salesforce-scrt.com'
+						scrt2URL: 'https://infallibletechiemiaworg.my.salesforce-scrt.com'
 					}
 				);
 			} catch (err) {
@@ -18,6 +18,6 @@
 			}
 		};
 	</script>
-	<script type='text/javascript' src='https://infallibletechiemiaw.my.site.com/ESWMessagingforInAppa1676392506026/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	<script type='text/javascript' src='https://infallibletechiemiaworg.my.site.com/ESWMIAW1720544291552/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
    </body>
 </html>
