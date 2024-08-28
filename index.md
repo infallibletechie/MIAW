@@ -14,10 +14,14 @@
 					}
 				);
 
-				window.addEventListener("onEmbeddedMessagingWindowMinimized", () => {
+				window.addEventListener("onEmbeddedMessagingWindowMinimized", ( event ) => {
 					console.log(
 						"Inside onEmbeddedMessagingWindowMinimized event"
 					);
+	     				console.log(
+						 "Event detail is", 
+       						event.detail
+					  );
 					alert(
      						'You have minimized the Messaging Window.\nPlease feel free to expand it to Chat with us!!!'
      					);
