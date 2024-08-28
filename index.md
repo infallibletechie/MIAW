@@ -4,6 +4,15 @@
 		function initEmbeddedMessaging() {
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+				window.addEventListener("onEmbeddedMessagingReady", () => {
+					console.log(
+						"onEmbeddedMessagingWindowMinimized event"
+					);
+					alert(
+     						'You have minimized the Messaging Window. Please feel free to expand it to Chat with us!!!
+     					);
+				});
 	
 				embeddedservice_bootstrap.init(
 					'00Dau000002ItPt',
