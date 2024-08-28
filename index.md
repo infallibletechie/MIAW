@@ -10,8 +10,7 @@
 						"Inside onEmbeddedMessagingWindowMinimized event"
 					);
 					alert(
-     						'You have minimized the Messaging Window. 
-	   					Please feel free to expand it to Chat with us!!!'
+     						'You have minimized the Messaging Window.\nPlease feel free to expand it to Chat with us!!!'
      					);
 				});
 	
