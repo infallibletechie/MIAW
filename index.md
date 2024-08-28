@@ -1,6 +1,20 @@
 <html>
    <body>
 	<script type='text/javascript'>
+
+		window.addEventListener("onEmbeddedMessagingWindowMinimized", ( event ) => {
+			console.log(
+				"Inside onEmbeddedMessagingWindowMinimized event"
+			);
+			console.log(
+				 "Event detail is", 
+				event.detail
+			  );
+			alert(
+				'You have minimized the Messaging Window.\nPlease feel free to expand it to Chat with us!!!'
+			);
+		});
+  
 		function initEmbeddedMessaging() {
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -13,19 +27,6 @@
 						scrt2URL: 'https://infallibletechiemiaworg.my.salesforce-scrt.com'
 					}
 				);
-
-				window.addEventListener("onEmbeddedMessagingWindowMinimized", ( event ) => {
-					console.log(
-						"Inside onEmbeddedMessagingWindowMinimized event"
-					);
-	     				console.log(
-						 "Event detail is", 
-       						event.detail
-					  );
-					alert(
-     						'You have minimized the Messaging Window.\nPlease feel free to expand it to Chat with us!!!'
-     					);
-				});
 			} catch (err) {
 				console.error('Error loading Embedded Messaging: ', err);
 			}
