@@ -5,9 +5,9 @@
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-				window.addEventListener("onEmbeddedMessagingReady", () => {
+				window.addEventListener("onEmbeddedMessagingWindowMinimized", () => {
 					console.log(
-						"onEmbeddedMessagingWindowMinimized event"
+						"Inside onEmbeddedMessagingWindowMinimized event"
 					);
 					alert(
      						'You have minimized the Messaging Window. Please feel free to expand it to Chat with us!!!
