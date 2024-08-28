@@ -24,40 +24,31 @@
 			console.log("Received the onEmbeddedMessagingPreChatSubmitted event…" + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessagingConversationParticipantChanged", (e) => {
-			var eventName = "onEmbeddedMessagingConversationParticipantChanged";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessagingConversationParticipantChanged event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessageSent", (e) => {
-			var eventName = "onEmbeddedMessageSent";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessageSent event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessagingTranscriptRequested", (e) => {
-			var eventName = "onEmbeddedMessagingTranscriptRequested";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessagingTranscriptRequested event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessagingTranscriptRequestFailed", (e) => {
-			var eventName = "onEmbeddedMessagingTranscriptRequestFailed";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessagingTranscriptRequestFailed event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessagingTranscriptDownloadSuccessful", (e) => {
-			var eventName = "onEmbeddedMessagingTranscriptDownloadSuccessful";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessagingTranscriptDownloadSuccessful event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessagingConversationClosed", (e) => {
-			var eventName = "onEmbeddedMessagingConversationClosed";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessagingConversationClosed event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessageDelivered", (e) => {
-			var eventName = "onEmbeddedMessageDelivered";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessageDelivered event…` + JSON.stringify(e.detail));
 		    });
 		    window.addEventListener("onEmbeddedMessageRead", (e) => {
-			var eventName = "onEmbeddedMessageRead";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessageRead event…` + JSON.stringify(e.detail));
 		    });
 		   window.addEventListener("onEmbeddedMessagingLinkClicked", (e) => {
-			var eventName = "onEmbeddedMessagingLinkClicked";
-			console.log(`Received the ${eventName} event…` + JSON.stringify(e.detail));
+			console.log(`Received the onEmbeddedMessagingLinkClicked event…` + JSON.stringify(e.detail));
 		    });
 	</script>	   
 	<script type='text/javascript'>
