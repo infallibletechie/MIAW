@@ -1,7 +1,9 @@
 <html>
    <body>
-	<script type='text/javascript'>
-		    
+	<script type='text/javascript'>		
+		    window.addEventListener("onEmbeddedMessagingReady", () => {
+	               console.log("onEmbeddedMessagingReady emitted");
+	            });
 		    window.addEventListener("onEmbeddedMessagingWindowMaximized", (e) => {
 			console.log("Received the onEmbeddedMessagingWindowMaximized event…" + JSON.stringify(e.detail));
 		    });
