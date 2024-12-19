@@ -5,7 +5,7 @@
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 				
-    				embeddedservice_bootstrap.settings.chatButtonPosition = "30px,20px";
+    				embeddedservice_bootstrap.settings.chatButtonPosition = "100px,100px";
 	
 				embeddedservice_bootstrap.init(
 					'00Dau000002ItPt',
