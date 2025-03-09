@@ -8,6 +8,7 @@
     				window.addEventListener( "onEmbeddedMessageSent", () => {
 
 					console.log( "START:: Message Sent" );
+     					console.log( "Event detail: ", JSON.stringify( event.detail ) );
 					console.log( "END:: Message Sent" );
 				
 					
