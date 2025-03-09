@@ -23,7 +23,7 @@
 							
 							if ( strMessage.includes( 'Redirect to Payment Page:' ) ) {
 					
-								window.open( 'www.infallibletechie.com', '_self' );
+								window.open( 'https://www.infallibletechie.com', '_self' );
 					
 							}
 						}
