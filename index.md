@@ -9,6 +9,7 @@
 
 					console.log( "START:: Message Sent" );
      					console.log( "Event detail: ", JSON.stringify( event.detail ) );
+     					console.log( "Event detail: ", event.detail.conversationEntry.abstractMessage.staticContent.text );
 					console.log( "END:: Message Sent" );
 				
 					
