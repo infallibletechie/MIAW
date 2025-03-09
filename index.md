@@ -5,7 +5,7 @@
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 				
-    				window.addEventListener( "onEmbeddedMessageSent", () => {
+    				window.addEventListener( "onEmbeddedMessageSent", ( event ) => {
 
 					console.log( "START:: Message Sent" );
      					console.log( "Event detail: ", JSON.stringify( event.detail ) );
