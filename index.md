@@ -9,7 +9,27 @@
 
 					console.log( "START:: Message Sent" );
      					console.log( "Event detail: ", JSON.stringify( event.detail ) );
-     					console.log( "Event detail: ", event.detail.conversationEntry.abstractMessage.staticContent.text );
+     					
+					let tempContent = event.detail;
+
+					if ( tempContent.conversationEntry.entryPayload ) {
+					
+						tempContent = JSON.parse( tempContent.conversationEntry.entryPayload );
+					
+						if ( tempContent.abstractMessage.staticContent.text ) {
+							
+							let strMessage = tempContent.abstractMessage.staticContent.text;
+							console.log( strMessage );
+							
+							if ( strMessage.includes( 'Redirect to Payment Page:' ) ) {
+					
+								window.open( 'www.infallibletechie.com', '_self' );
+					
+							}
+						}
+					
+					}
+   
 					console.log( "END:: Message Sent" );
 				
 					
