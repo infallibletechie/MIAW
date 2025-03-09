@@ -12,23 +12,34 @@
      					
 					let tempContent = event.detail;
 
-					if ( tempContent.conversationEntry.entryPayload ) {
-					
-						tempContent = JSON.parse( tempContent.conversationEntry.entryPayload );
-					
-						if ( tempContent.abstractMessage.staticContent.text ) {
+      					if ( tempContent.conversationEntry.sender.role ) {
+	   
+						let strRole = tempContent.conversationEntry.sender.role;
+      						console.log( 'strRole =>', strRole );
+
+	 					if ( strRole == 'Agent' ) {
+	
+							if ( tempContent.conversationEntry.entryPayload ) {
 							
-							let strMessage = tempContent.abstractMessage.staticContent.text;
-							console.log( strMessage );
+								tempContent = JSON.parse( tempContent.conversationEntry.entryPayload );
 							
-							if ( strMessage.includes( 'Redirect to Payment Page:' ) ) {
-					
-								window.open( 'https://www.infallibletechie.com', '_self' );
-					
+								if ( tempContent.abstractMessage.staticContent.text ) {
+									
+									let strMessage = tempContent.abstractMessage.staticContent.text;
+									console.log( strMessage );
+									
+									if ( strMessage.includes( 'Redirect to Payment Page:' ) ) {
+							
+										window.open( 'https://www.infallibletechie.com', '_self' );
+							
+									}
+								}
+							
 							}
-						}
-					
-					}
+
+      						}
+
+     					}
    
 					console.log( "END:: Message Sent" );
 				
