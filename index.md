@@ -4,7 +4,7 @@
 		function initEmbeddedMessaging() {
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-				embeddedservice_bootstrap.settings.chatButtonPosition = "bottom-center";
+				embeddedservice_bootstrap.settings.chatButtonPosition = "50px,50px";
 				embeddedservice_bootstrap.init(
 					'00Dau000002ItPt',
 					'MIAW',
