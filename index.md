@@ -9,8 +9,8 @@
 				window.addEventListener( "onEmbeddedMessagingConversationOpened", ( event ) => {
 				
 					console.log( "START:: Conversation Opened" );
-					console.log( "Event detail: ", JSON.stringify( event.detail ) );
      					console.log( "Page location is " + window.location.href );
+					console.log( "Event detail: ", JSON.stringify( event.detail ) );
 					console.log( "END:: Conversation Opened" );
 				
 				} );
@@ -31,6 +31,6 @@
 		};
 	</script>
 	<script type='text/javascript' src='https://infallibletechiemiaworg.my.site.com/ESWMIAW1720544291552/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
- <a href="https://infallibletechie.github.io/MIAW-New-Page/" target="_blank">Open</a>
+ <a href="https://infallibletechie.github.io/MIAW-New-Page/" target="_blank">Open New Page</a>
    </body>
 </html>
