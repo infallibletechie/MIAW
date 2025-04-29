@@ -30,5 +30,6 @@
 		};
 	</script>
 	<script type='text/javascript' src='https://infallibletechiemiaworg.my.site.com/ESWMIAW1720544291552/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+ <a href="https://infallibletechie.github.io/MIAW-New-Page/" target="_blank">Open</a>
    </body>
 </html>
