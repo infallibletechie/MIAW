@@ -1,20 +1,25 @@
 <html>
+	<audio id="AudioId">
+	    <source src="SampleMusic.mp3" type="audio/mpeg">
+	</audio>
    <body>
 	<script type='text/javascript'>
 		function initEmbeddedMessaging() {
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-    				/* START:: Conversation Opened Listener */
-				window.addEventListener( "onEmbeddedMessagingConversationOpened", ( event ) => {
+    				/* START:: Conversation Sent Listener */
+				window.addEventListener( "onEmbeddedMessageSent", ( event ) => {
 				
-					console.log( "START:: Conversation Opened" );
+					console.log( "START:: Conversation Sent" );
      					console.log( "Page location is " + window.location.href );
 					console.log( "Event detail: ", JSON.stringify( event.detail ) );
-					console.log( "END:: Conversation Opened" );
+					let objSound = document.getElementById( "AudioId" );
+					objSound.play();
+					console.log( "END:: Conversation Sent" );
 				
 				} );
-    				/* END:: Conversation Opened Listener */
+    				/* END:: Conversation Sent Listener */
     
 				embeddedservice_bootstrap.settings.chatButtonPosition = "50px,50px";
 				embeddedservice_bootstrap.init(
